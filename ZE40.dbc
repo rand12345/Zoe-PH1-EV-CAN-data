@@ -1,0 +1,50 @@
+VERSION "0.1"
+
+
+NS_ :
+    NS_DESC_
+    CM_
+    BA_DEF_
+    BA_
+    VAL_
+    CAT_DEF_
+    CAT_
+    FILTER
+    BA_DEF_DEF_
+    EV_DATA_
+    ENVVAR_DATA_
+    SGTYPE_
+    SGTYPE_VAL_
+    BA_DEF_SGTYPE_
+    BA_SGTYPE_
+    SIG_TYPE_REF_
+    VAL_TABLE_
+    SIG_GROUP_
+    SIG_VALTYPE_
+    SIGTYPE_VALTYPE_
+    BO_TX_BU_
+    BA_DEF_REL_
+    BA_REL_
+    BA_DEF_DEF_REL_
+    BU_SG_REL_
+    BU_EV_REL_
+    BU_BO_REL_
+    SG_MUL_VAL_
+
+BS_:
+BU_: ZE40_battery
+BO_ 341 x155: 8 ZE40_battery
+   SG_ Max_charge_rate : 7|8@0+ (0.5,0) [0|127] "Amps" ZE40_battery
+   SG_ Current_sensor : 13|14@0- (2.5,-5000) [0|127] "Amps" ZE40_battery
+   SG_ SoC : 39|16@0+ (0.0025,0) [0|100] "%" ZE40_battery
+
+BO_ 1060 x424: 8 ZE40_battery
+   SG_ Pack_temperature : 39|8@0- (1,-40) [-40|60] "Deg_C" ZE40_battery
+   SG_ SoH : 47|8@0+ (1,0) [0|255] "" ZE40_battery
+   SG_ Cell_temperature_high : 63|8@0- (1,-40) [-40|60] "Deg_C" ZE40_battery
+
+BO_ 1061 x425: 8 ZE40_battery
+   SG_ kWh_remaining : 0|9@0+ (0.1,0) [0|60] "kWh" ZE40_battery
+   SG_ Cell_volts_high : 33|9@0+ (10,1000) [2900|4200] "mV" ZE40_battery
+   SG_ Cell_volts_low : 48|9@0+ (10,1000) [2900|60] "mV" ZE40_battery
+
